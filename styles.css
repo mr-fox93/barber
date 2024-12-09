@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #eeeeee;
+  font-family: "Raleway", sans-serif;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #060608;
+  color: #f7f7f7;
+  --title-color: #f7f7f7;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: #eeeeee;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #060608;
+  box-shadow: 0 2px 4px hsl(0, 0%, 1%);
+  transition: top 0.3s ease;
+  box-shadow: 0 4px 8px rgba(232, 226, 226, 0.2);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+}
+
+header .logo h1 {
+  font-size: 1.5rem;
+}
+
+header .navbar ul {
+  list-style: none;
+  display: flex;
+}
+
+header .navbar ul li {
+  margin-left: 1rem;
+}
+
+header .navbar ul li a {
+  color: #eeeeee;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+header .hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+header .hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  margin-top: 80px;
+}
+
+/* Oferta */
+/* Oferta */
+.oferta {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem;
+  gap: 1rem;
+}
+
+.oferta-item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 200px;
+  height: 220px;
+  gap: 0.5rem;
+}
+
+.oferta-item img {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 0.25rem;
+}
+
+.oferta-item h3 {
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+  height: 1.5rem;
+}
+
+.oferta-item p {
+  text-align: justify;
+  margin-top: 0;
+  height: 2.5rem;
+  line-height: 1.2rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#kim-jestem {
+  padding: 2rem;
+  text-align: center;
+}
+
+#kim-jestem h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #eeeeee;
+}
+
+#kim-jestem p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f7f7f7;
+}
+
+#kim-jestem-image img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  header .navbar ul {
+    display: none;
+  }
+
+  header .hamburger {
+    display: flex;
+  }
+
+  header .navbar.active ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .logo h1 {
+    font-size: 1.2rem;
+  }
+
+  header .navbar ul li {
+    margin-left: 0;
+  }
+
+  header .navbar ul li a {
+    font-size: 0.9rem;
+  }
+
+  .oferta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .oferta-item {
+    max-width: none;
+  }
+}
+
+.reservation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #060608;
+  margin-top: 25px;
+}
+
+.button_reservation {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: larger;
+  font-family: "Raleway", sans-serif;
+  width: 80%;
+  height: 65px;
+  background-color: transparent;
+  color: #eeeeee;
+  border-radius: 5px;
+  border: 4px solid #eeeeee;
+  padding: 0 20px;
+  gap: 10px;
+  overflow: hidden;
+  z-index: 1;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 6px 10px rgba(238, 238, 238, 0.2);
+}
+
+.button_reservation:hover {
+  transform: translateY(2px);
+  box-shadow: 0 4px 8px rgba(238, 238, 238, 0.2);
+}
+
+.button_reservation:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 5px rgba(238, 238, 238, 0.3);
+  background-color: #eeeeee;
+  color: #060608;
+}
+
+.lollipop {
+  width: 50px;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .button_reservation {
+    width: 80%;
+  }
+
+  .lollipop {
+    width: 30px;
+  }
+}
+
+.dla-kogo {
+  background-color: #060608;
+  padding: 4rem 2rem;
+}
+
+.dla-kogo .container {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.dla-kogo h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #eeeeee;
+}
+
+.dla-kogo p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #f7f7f7;
+}
+
+@media (max-width: 768px) {
+  .dla-kogo .container {
+    padding: 1.5rem;
+  }
+
+  .dla-kogo h3 {
+    font-size: 1.5rem;
+  }
+
+  .dla-kogo p {
+    font-size: 1rem;
+  }
+}
+
+#adres {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 30px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.sekcja {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.sekcja h3 {
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ikona {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.sekcja a,
+.sekcja p {
+  margin: 0;
+  font-size: 16px;
+  text-decoration: none;
+  line-height: 1.5;
+}
+
+.sekcja a {
+  color: #eeeeee;
+}
+
+.sekcja a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  #adres {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sekcja {
+    max-width: none;
+    width: 100%;
+    margin-bottom: 20px;
+    color: #eeeeee;
+  }
+}

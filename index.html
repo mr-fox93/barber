@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barber Shop</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="assets/logo.webp" alt="Logo Barber Shop" />
+        <p>Słoń Beniamin barberBUS</p>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#rezerwuj">Rezerwuj</a></li>
+          <li><a href="#oferta">Oferta</a></li>
+          <li><a href="#kim-jestem">Kim Jestem</a></li>
+          <li><a href="#adres">Adres</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <img src="assets/bus.webp" alt="Zakład fryzjerski" />
+    </section>
+
+    <section id="rezerwuj">
+      <div class="reservation">
+        <button
+          class="button_reservation"
+          onclick="window.location.href='https://n1244849.alteg.io/company/1189391/personal/select-services?o=m2673067'"
+        >
+          UMÓW WIZYTĘ
+        </button>
+      </div>
+    </section>
+
+    <section id="oferta" class="oferta">
+      <div class="oferta-item">
+        <img src="assets/barbershop.png" alt="Ikona strzyżenia" />
+        <h3>Klasyczne strzyżenie</h3>
+        <p>
+          Tradycyjna fryzura łącząca pracę nożyczek i maszynki z płynnym
+          przejściem skinfade od skóry do dłuższych włosów.
+        </p>
+      </div>
+      <div class="oferta-item">
+        <img src="assets/electric-razor.png" alt="Ikona buzzcut" />
+        <h3>Buzzcut</h3>
+        <p>
+          Krótko strzyżone włosy maszynką z wyrazistym przejściem od skóry
+          skinfade
+        </p>
+      </div>
+      <div class="oferta-item">
+        <img src="assets/beard.png" alt="Ikona zarostu" />
+        <h3>Zarost/Broda</h3>
+        Stylizacja, przycinanie i pielęgnacja zarostu lub brody, dopasowane do
+        twarzy.
+      </div>
+      <div class="oferta-item">
+        <img src="assets/hairstyle.png" alt="Ikona combo" />
+        <h3>Combo (włosy + broda)</h3>
+        Połączenie strzyżenia włosów i stylizacji zarostu w jednej usłudze.
+      </div>
+    </section>
+    <section id="dla-kogo" class="dla-kogo">
+      <div class="container">
+        <h3>Dla kogo jest BarberBUS?</h3>
+        <p>
+          Dla osób ceniących sobie prywatność, czas i prestiż. Przyjeżdżam tam,
+          gdzie mnie potrzebujesz – do Twojego domu, rezydencji, biura lub innej
+          lokalizacji. BarberBUS jest w pełni przystosowany jak stacjonarny
+          salon, oferując komfortową i kameralną atmosferę.
+        </p>
+      </div>
+    </section>
+
+    <section id="kim-jestem">
+      <h2>O mnie</h2>
+      <p>
+        Nazywam się Benji, a mój mobilny salon barberski Słoń Beniamin BarberBUS
+        to wyjątkowe miejsce, które łączy luksus, profesjonalizm i wygodę.
+        Jestem barberem od 2021 roku, a swoje umiejętności rozwijałem na
+        specjalistycznych kursach barberskich, zdobywając następnie cenne
+        doświadczenie w prestiżowym barbershopie. W październiku 2024 roku
+        stworzyłem pierwszy mobilny salon barberski we Wrocławiu i na Dolnym
+        Śląsku, oferujący najwyższą jakość usług w dowolnym miejscu wybranym
+        przez Ciebie.
+      </p>
+    </section>
+    <section id="kim-jestem-image">
+      <img src="assets/inside.webp" alt="Benji" class="barber" />
+    </section>
+
+    <section id="adres">
+      <div class="sekcja">
+        <h3>Kontakt</h3>
+        <div class="row">
+          <img src="assets/iphone.png" alt="Telefon" class="ikona" />
+          <a href="tel:123456789">+48 660 739 882</a>
+        </div>
+      </div>
+      <div class="sekcja">
+        <h3>Adres</h3>
+        <div class="row">
+          <img src="assets/placeholder.png" alt="Adres" class="ikona" />
+          <a
+            href="https://www.google.com/maps?q=ul.+Rychtalska+16,+Wrocław,+50-304"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ul. Rychtalska 16, Wrocław, 50-304
+          </a>
+        </div>
+      </div>
+
+      <div class="sekcja">
+        <h3>Follow us</h3>
+        <div class="row">
+          <img src="assets/instagram (1).png" alt="Instagram" class="ikona" />
+          <a
+            href="https://www.instagram.com/barber.z.jaguara/?igsh=MXNiY2x1MmZ4eHNydQ%3D%3D#"
+            target="_blank"
+            >Instagram</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
