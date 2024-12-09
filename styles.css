@@ -377,3 +377,34 @@ header .hamburger .bar {
     color: #eeeeee;
   }
 }
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #060608;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(232, 226, 226, 0.2);
+  z-index: 999;
+  transition: background-color 0.3s ease;
+}
+
+.scroll-to-top a img {
+  width: 30px;
+  height: 30px;
+}
+
+@media (max-width: 768px) {
+  .scroll-to-top {
+    display: flex;
+  }
+
+  .scroll-to-top:hover {
+    background-color: #2b2b2b;
+  }
+}
