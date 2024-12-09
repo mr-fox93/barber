@@ -13,6 +13,10 @@ body {
   --title-color: #f7f7f7;
 }
 
+body.no-scroll {
+  overflow: hidden;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -79,8 +83,48 @@ header .hamburger .bar {
   margin-top: 80px;
 }
 
+@media (max-width: 768px) {
+  header .navbar ul {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+  }
+
+  header .navbar.active ul {
+    display: flex;
+  }
+
+  header .hamburger {
+    display: flex;
+  }
+
+  header .navbar ul li {
+    margin-left: 0;
+  }
+
+  header .navbar ul li a {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+  }
+
+  header .navbar ul li a:hover {
+    text-decoration: underline;
+  }
+}
+
 /* Oferta */
-/* Oferta */
+
 .oferta {
   display: flex;
   justify-content: space-around;

@@ -1,3 +1,11 @@
+function toggleMenu() {
+  const navbar = document.querySelector("header .navbar");
+  const body = document.body;
+
+  navbar.classList.toggle("active");
+  body.classList.toggle("no-scroll");
+}
+
 document.querySelectorAll("header .navbar a").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -13,5 +21,11 @@ document.querySelectorAll("header .navbar a").forEach((anchor) => {
         behavior: "smooth",
       });
     }
+
+    const navbar = document.querySelector("header .navbar");
+    navbar.classList.remove("active");
+
+    const body = document.body;
+    body.classList.remove("no-scroll");
   });
 });
