@@ -1,8 +1,3 @@
-function toggleMenu() {
-  const navbar = document.querySelector("header .navbar");
-  navbar.classList.toggle("active");
-}
-
 document.querySelectorAll("header .navbar a").forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault();
@@ -11,8 +6,10 @@ document.querySelectorAll("header .navbar a").forEach((anchor) => {
     const targetSection = document.getElementById(targetId);
 
     if (targetSection) {
+      const headerHeight = document.querySelector("header").offsetHeight;
+
       window.scrollTo({
-        top: targetSection.offsetTop,
+        top: targetSection.offsetTop - headerHeight,
         behavior: "smooth",
       });
     }
