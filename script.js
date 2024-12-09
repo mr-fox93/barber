@@ -29,3 +29,15 @@ document.querySelectorAll("header .navbar a").forEach((anchor) => {
     body.classList.remove("no-scroll");
   });
 });
+
+const scrollToTopButton = document.querySelector(".scroll-to-top");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 200) {
+    scrollToTopButton.style.opacity = "1";
+    scrollToTopButton.style.pointerEvents = "auto";
+  } else {
+    scrollToTopButton.style.opacity = "0";
+    scrollToTopButton.style.pointerEvents = "none";
+  }
+});

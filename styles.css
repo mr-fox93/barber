@@ -383,28 +383,31 @@ header .hamburger .bar {
   bottom: 20px;
   right: 20px;
   background-color: #060608;
+  color: white;
   border-radius: 50%;
   width: 60px;
   height: 60px;
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 8px rgba(232, 226, 226, 0.2);
-  z-index: 999;
-  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 10px rgba(232, 226, 226, 0.4);
+  transition: opacity 0.3s ease-in-out, box-shadow 0.3s ease; /* Dodano płynne przejście */
+  opacity: 0; /* Na początku ukrywamy przycisk */
+  pointer-events: none; /* Dezaktywowane kliknięcia na początku */
+  z-index: 100;
 }
 
-.scroll-to-top a img {
+.scroll-to-top img {
   width: 30px;
   height: 30px;
+  filter: brightness(0) invert(1);
 }
 
-@media (max-width: 768px) {
-  .scroll-to-top {
-    display: flex;
-  }
+.scroll-to-top:hover {
+  box-shadow: 0 4px 15px rgba(232, 226, 226, 0.6);
+}
 
-  .scroll-to-top:hover {
-    background-color: #2b2b2b;
-  }
+.scroll-to-top a {
+  color: white;
+  text-decoration: none;
 }
